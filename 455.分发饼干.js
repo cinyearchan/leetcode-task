@@ -13,14 +13,17 @@
 var findContentChildren = function (g, s) {
   g.sort((a, b) => a - b);
   s.sort((a, b) => a - b);
-  let len = g.length;
-  let i = 0;
-  while (g.length !== 0 && i <= s.length) {
-    if (g[0] <= s[i]) {
-      g.shift();
+  let numOfChildren = g.length;
+  let numOfCookies = s.length;
+  let count = 0;
+  for (let i = 0, j = 0; i < numOfChildren && j < numOfCookies; i++, j++) {
+    while (j < numOfCookies && s[j] < g[i]) {
+      j++;
     }
-    i++;
+    if (j < numOfCookies) {
+      count++;
+    }
   }
-  return len - g.length;
+  return count;
 };
 // @lc code=end
