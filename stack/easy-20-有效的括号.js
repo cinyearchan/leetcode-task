@@ -9,7 +9,7 @@
  * @param {string} s
  * @return {boolean}
  */
-var isValid = function (s) {
+var isValid = function(s) {
   let len = s.length;
   if (len % 2 !== 0) {
     return false;
@@ -34,3 +34,4 @@ var isValid = function (s) {
   return stack.length === 0;
 };
 // @lc code=end
+

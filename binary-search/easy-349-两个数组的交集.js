@@ -10,7 +10,7 @@
  * @param {number[]} nums2
  * @return {number[]}
  */
-var intersection = function (nums1, nums2) {
+var intersection = function(nums1, nums2) {
   // let map = new Map();
   // let result = [];
   // for (let i = 0; i < nums1.length; i++) {
@@ -40,3 +40,4 @@ var intersection = function (nums1, nums2) {
   return [...new Set(b.filter(item => a.includes(item)))];
 };
 // @lc code=end
+

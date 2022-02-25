@@ -10,7 +10,7 @@
  * @param {number[]} s
  * @return {number}
  */
-var findContentChildren = function (g, s) {
+var findContentChildren = function(g, s) {
   g.sort((a, b) => a - b);
   s.sort((a, b) => a - b);
   let numOfChildren = g.length;
@@ -27,3 +27,4 @@ var findContentChildren = function (g, s) {
   return count;
 };
 // @lc code=end
+

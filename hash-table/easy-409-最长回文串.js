@@ -9,7 +9,7 @@
  * @param {string} s
  * @return {number}
  */
-var longestPalindrome = function (s) {
+var longestPalindrome = function(s) {
   // 统计字符出现的次数
   // 所有的偶数 + 最大的奇数
   let map = new Map();
@@ -23,3 +23,4 @@ var longestPalindrome = function (s) {
   return result !== s.length ? result + 1 : result;
 };
 // @lc code=end
+

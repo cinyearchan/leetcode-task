@@ -10,7 +10,7 @@
  * @param {number[]} cost
  * @return {number}
  */
-var canCompleteCircuit = function (gas, cost) {
+var canCompleteCircuit = function(gas, cost) {
   // 暴力解法，提交时超出时间限制
   // let len = gas.length;
   // for (let i = 0; i < len; ++i) {
@@ -61,3 +61,4 @@ var canCompleteCircuit = function (gas, cost) {
   return total < 0 ? -1 : start;
 };
 // @lc code=end
+

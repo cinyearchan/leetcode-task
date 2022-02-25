@@ -6,16 +6,16 @@
 
 // @lc code=start
 
-var RecentCounter = function () {
+var RecentCounter = function() {
   this.pingCount = 0;
   this.count = [];
 };
 
-/**
+/** 
  * @param {number} t
  * @return {number}
  */
-RecentCounter.prototype.ping = function (t) {
+RecentCounter.prototype.ping = function(t) {
   if (!t || typeof t !== "number") {
     return null;
   }
@@ -43,3 +43,4 @@ RecentCounter.prototype.ping = function (t) {
  * var param_1 = obj.ping(t)
  */
 // @lc code=end
+

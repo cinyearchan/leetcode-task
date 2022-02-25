@@ -9,7 +9,7 @@
  * @param {number[]} prices
  * @return {number}
  */
-var maxProfit = function (prices) {
+var maxProfit = function(prices) {
   // 找波峰波谷
   // if (!prices || prices.length === 0) return 0;
   // let profit = 0,
@@ -37,3 +37,4 @@ var maxProfit = function (prices) {
   return profit;
 };
 // @lc code=end
+

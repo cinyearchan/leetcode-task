@@ -9,7 +9,7 @@
  * @param {string} s
  * @return {string}
  */
-var makeGood = function (s) {
+var makeGood = function(s) {
   if (s.length === 0 || s.length === 1) {
     return s;
   }
@@ -30,3 +30,4 @@ var makeGood = function (s) {
   return s;
 };
 // @lc code=end
+
